@@ -1,0 +1,25 @@
+// Mixins Here
+
+.column(){
+    display: flex;
+    flex-direction: column;
+  }
+  .width(){
+    width: 100%;
+    margin: 0 auto;
+  }
+
+//Parametric Mixin
+
+.custom-btn(@bgcolor:#01796f, @width:200px, @font-color:white){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: @bgcolor;
+    color: @font-color;
+    cursor: pointer;
+    width: @width;
+    height:35px;
+    font-size: 1.8rem;
+    border-radius: 5px;
+}
