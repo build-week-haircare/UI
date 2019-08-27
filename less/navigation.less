@@ -1,31 +1,30 @@
 // Navigation code here
 
-nav{
-    .column();
-    .width();
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     align-items: center;
-    background-color: aliceblue;
-    border: 1px solid black;
-    .nav-landing{ 
-        display: flex;
-        flex-direction: row;
-        border: 1px solid red;
+    width: 100%;
+    background-color: #fdb4e5;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 20px 0;
+    font-size: 2rem;
+    img {
+        height: 150px;
+        width: 150px;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+        // background-color: #b3b3b3;
     }
-    .navigation{
-        display: flex;
-        justify-content: space-evenly;
-        padding: 10px 200px;
-        font-size: 1.5rem;
-        width: 70%;
-        @media @phone{
-        display: flex;
-        justify-content: space-evenly;
-        padding: 10px 0;
-        font-size: 1.3rem;
-        }//This cloese the .navigation media query
-    }//This closes the .navigation
-      a{
-        color: black; 
-        border:1px solid red;
-         }//This closes the a tag
- }//This closes the nav tag
+    a{
+        margin: 10px;
+        padding: 5px;
+        color: white; 
+        // background-color: #c8c8c8;
+        border-radius: 10px;
+    }
+}

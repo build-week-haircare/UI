@@ -160,38 +160,31 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-nav {
+header {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 0 auto;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   align-items: center;
-  background-color: aliceblue;
-  border: 1px solid black;
+  width: 100%;
+  background-color: #fdb4e5;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 20px 0;
+  font-size: 2rem;
 }
-nav .nav-landing {
-  display: flex;
-  flex-direction: row;
-  border: 1px solid red;
+header img {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
 }
-nav .navigation {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 10px 200px;
-  font-size: 1.5rem;
-  width: 70%;
-}
-@media (max-width: 500px) {
-  nav .navigation {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px 0;
-    font-size: 1.3rem;
-  }
-}
-nav a {
-  color: black;
-  border: 1px solid red;
+header a {
+  margin: 10px;
+  padding: 5px;
+  color: white;
+  border-radius: 10px;
 }
 footer {
   color: #22283B;
@@ -203,8 +196,39 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.middle-section .top-content {
+  padding: 10px;
+  font-size: 2rem;
+}
+.middle-section h1 {
+  color: white;
+  font-family: 'PT Serif', serif;
+  padding: 10px;
+}
+.middle-section p {
+  color: white;
+  font-family: 'PT Serif', serif;
+}
 .middle-section img {
-  width: 90rem;
-  border: 1px solid red;
-  height: 45rem;
+  max-width: 100%;
+  margin: 0;
+  border-radius: 6px;
+  height: auto;
+  padding: 100px;
+}
+body {
+  background-color: #494949;
+}
+.section {
+  padding: 0 20px 20px 20px;
+  color: white;
+}
+.section h2 {
+  color: white;
+  font-family: 'PT Serif', serif;
+  padding: 10px;
+}
+.section p {
+  color: white;
+  font-family: 'PT Serif', serif;
 }
