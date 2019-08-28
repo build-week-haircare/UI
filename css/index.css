@@ -134,7 +134,7 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'PT Serif', serif;
   color: #5E6164;
 }
 h1,
@@ -142,7 +142,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Indie Flower', cursive;
   color: #23293B;
 }
 h2 {
@@ -244,4 +244,16 @@ body {
   color: white;
   font-family: 'PT Serif', serif;
   line-height: 2;
+}
+.Mykol {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid black;
+}
+.Mykol img {
+  max-width: 20%;
+}
+.Mykol h1 {
+  font-size: 3.2rem;
+  color: white;
 }
