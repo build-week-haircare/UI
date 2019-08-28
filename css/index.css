@@ -134,7 +134,7 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'PT Serif', serif;
   color: #5E6164;
 }
 h1,
@@ -142,7 +142,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Indie Flower', cursive;
   color: #23293B;
 }
 h2 {
@@ -171,7 +171,8 @@ header {
   top: 0;
   z-index: 100;
   padding: 20px 0;
-  font-size: 2rem;
+  font-size: 2.6rem;
+  font-family: 'Indie Flower', cursive;
 }
 header img {
   height: 150px;
@@ -196,39 +197,63 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.middle-section {
+  margin: 30px 0;
+}
 .middle-section .top-content {
   padding: 10px;
-  font-size: 2rem;
+  font-size: 3.2rem;
+  border: 1px;
+  width: 100%;
 }
 .middle-section h1 {
   color: white;
-  font-family: 'PT Serif', serif;
+  font-family: 'Indie Flower', cursive;
   padding: 10px;
 }
 .middle-section p {
   color: white;
   font-family: 'PT Serif', serif;
+  line-height: 2;
 }
 .middle-section img {
   max-width: 100%;
-  margin: 0;
   border-radius: 6px;
-  height: auto;
-  padding: 100px;
+  padding: 80px;
+}
+@media (max-width: 800px) {
+  .middle-section img {
+    display: none;
+  }
 }
 body {
   background-color: #494949;
 }
-.section {
+.bottom-section {
   padding: 0 20px 20px 20px;
   color: white;
+  padding-bottom: 10px;
+  line-height: 2;
 }
-.section h2 {
+.bottom-section h2 {
   color: white;
-  font-family: 'PT Serif', serif;
+  font-family: 'Indie Flower', cursive;
   padding: 10px;
 }
-.section p {
+.bottom-section p {
   color: white;
   font-family: 'PT Serif', serif;
+  line-height: 2;
+}
+.Mykol {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid black;
+}
+.Mykol img {
+  max-width: 20%;
+}
+.Mykol h1 {
+  font-size: 3.2rem;
+  color: white;
 }
