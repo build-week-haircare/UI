@@ -219,7 +219,7 @@ footer {
 .middle-section img {
   max-width: 100%;
   border-radius: 6px;
-  padding: 80px;
+  padding: 150px;
 }
 @media (max-width: 800px) {
   .middle-section img {
@@ -245,15 +245,67 @@ body {
   font-family: 'PT Serif', serif;
   line-height: 2;
 }
-.Mykol {
+.About-Us .First-One {
   display: flex;
   justify-content: space-evenly;
-  border: 1px solid black;
 }
-.Mykol img {
-  max-width: 20%;
+.About-Us .First-One img {
+  width: 20%;
+  border-radius: 20px;
 }
-.Mykol h1 {
+@media (max-width: 800px) {
+  .About-Us .First-One img {
+    display: none;
+  }
+}
+.About-Us .First-One .First {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px 0;
+  padding: 10px;
+  justify-content: center;
+}
+.About-Us .First-One .First h1 {
   font-size: 3.2rem;
+  color: white;
+  width: 100%;
+  padding: 20px;
+}
+.About-Us .First-One .First p {
+  color: white;
+}
+.About-Us .Second-one {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px 0;
+}
+.About-Us .Second-one img {
+  width: 20%;
+  border-radius: 20px;
+}
+@media (max-width: 800px) {
+  .About-Us .Second-one img {
+    display: none;
+  }
+}
+.About-Us .Second-one .Second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 20px;
+  padding: 10px;
+}
+.About-Us .Second-one .Second h1 {
+  font-size: 3.2rem;
+  color: white;
+  width: 100%;
+  padding: 20px;
+}
+.About-Us .Second-one .Second p {
   color: white;
 }
