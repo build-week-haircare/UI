@@ -213,24 +213,33 @@ footer {
   border: 1px;
   width: 100%;
 }
-.middle-section h1 {
+.middle-section .top-content a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 65px;
+  border-radius: 25px;
+  font-size: 4rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  user-select: none;
   color: white;
   font-family: 'Indie Flower', cursive;
   padding: 10px;
 }
-.middle-section p {
+.middle-section .top-content p {
   color: white;
   font-family: 'PT Serif', serif;
   line-height: 2;
 }
-.middle-section img {
-  max-width: 100%;
+.middle-section .top-content img {
+  width: 100%;
+  height: 700px;
   border-radius: 6px;
-  padding: 150px;
 }
 @media (max-width: 800px) {
-  .middle-section img {
-    display: none;
+  .middle-section .top-content img {
+    width: 100%;
   }
 }
 body {
