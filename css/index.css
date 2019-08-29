@@ -174,6 +174,13 @@ header {
   font-size: 2.6rem;
   font-family: 'Indie Flower', cursive;
 }
+@media (max-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+  }
+}
 header img {
   height: 150px;
   width: 150px;
@@ -245,9 +252,22 @@ body {
   font-family: 'PT Serif', serif;
   line-height: 2;
 }
+@media (max-width: 800px) {
+  .About-Us {
+    display: flex;
+    border: 1px solid black;
+    flex-wrap: wrap;
+  }
+}
 .About-Us .First-One {
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 800px) {
+  .About-Us .First-One {
+    display: flex;
+    align-items: center;
+  }
 }
 .About-Us .First-One img {
   width: 20%;
@@ -255,7 +275,10 @@ body {
 }
 @media (max-width: 800px) {
   .About-Us .First-One img {
-    display: none;
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    width: 30%;
   }
 }
 .About-Us .First-One .First {
@@ -283,13 +306,22 @@ body {
   margin: 20px;
   border-radius: 20px 0;
 }
+@media (max-width: 800px) {
+  .About-Us .Second-one {
+    display: flex;
+    align-items: center;
+  }
+}
 .About-Us .Second-one img {
   width: 20%;
   border-radius: 20px;
 }
 @media (max-width: 800px) {
   .About-Us .Second-one img {
-    display: none;
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    width: 30%;
   }
 }
 .About-Us .Second-one .Second {

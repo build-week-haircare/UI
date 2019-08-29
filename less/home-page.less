@@ -49,15 +49,28 @@ body{
 }
 
 .About-Us{
+    @media @phone {
+        display: flex;
+        border: 1px solid black; 
+        flex-wrap: wrap;
+    }
     .First-One{
         display: flex;
         justify-content: space-evenly;
+        @media @phone {
+            display: flex;
+            align-items: center;
+            
+            }
         img{
             width: 20%;
             border-radius: 20px;
             @media @phone {
-                display: none;
-            }
+                display: flex;
+                justify-content: center;
+                border: 1px solid white;
+                width: 30%;
+                }
         }
        .First{
             display: flex;
@@ -85,12 +98,20 @@ body{
         padding: 20px;
         margin: 20px;
         border-radius: 20px 0;
+        @media @phone {
+            display: flex;
+            align-items: center;
+            }
         img{
             width: 20%;
             border-radius: 20px;
             @media @phone {
-                display: none;
-            }
+                display: flex;
+                justify-content: center;
+                border: 1px solid white;
+                width: 30%;
+                }
+            
         }
        .Second{
         display: flex;
